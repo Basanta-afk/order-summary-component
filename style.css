@@ -1,0 +1,127 @@
+@media(max-width:500px) {
+    body {
+        background: url(images/pattern-background-mobile.svg)
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: url(images/pattern-background-desktop.svg), hsl(224, 23%, 55%);
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+.card {
+    max-width: 360px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: white;
+    text-align: center;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%;
+}
+
+.card .card-content {
+    padding: 20px 40px 20px;
+}
+
+.card-content h2 {
+    font-size: 26px;
+    font-weight: 900;
+    color: #1f2f56;
+}
+
+.card-content .description {
+    color: rgb(0, 0, 0, 0.3);
+    font-size: 14px;
+    margin: 14px;
+}
+
+.card .pricing-content {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: hsl(225, 100%, 98%);
+}
+
+.pricing-content .plan span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1f2f56;
+}
+
+.pricing-content .plan {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.pricing-content .change {
+    font-size: 14px;
+    font-weight: 600;
+    color: royalblue;
+    cursor: pointer;
+    transition: 00.2s;
+}
+
+.pricing-content .change:active {
+    filter: opacity(50%);
+    text-decoration: none;
+}
+
+.card button {
+    display: block;
+    width: 100%;
+    line-height: 36px;
+    font-size: 11px;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.card .pay-btn {
+    width: 75%;
+    margin: auto;
+    background: #3829e0;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+
+.card .pay-btn:active {
+    filter: opacity(60%);
+}
+
+.card .cancel-btn {
+    width: 30%;
+    margin: auto;
+    background: none;
+    color: rgb(0, 0, 0, 0.4);
+    transition: 0.2s;
+}
+
+.card .cancel-btn:active {
+    color: black;
+}
